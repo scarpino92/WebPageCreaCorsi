@@ -1,0 +1,32 @@
+#loginBody{
+    background: url("../img/48-482233_blue-smoke-wallpapers-desktop-12613-hd-pictures-high.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#loginBox{
+    width: 40vw;
+    height: auto;
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 70px;
+    background-color: #dfeefc;
+}
+
+.inpLog{
+    border-radius: 10px;
+}
+
+#progress{
+        background-color: #202ead;
+        width: 0px;
+        height: 20px;
+        border-radius: 10px;
+}
+
+footer{
+    background-color: #dfeefc;
+    padding: 5%;
+}

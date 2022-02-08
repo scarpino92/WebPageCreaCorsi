@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/creaCorso.css">
+    <title>Crea il tuo corso</title>
+</head>
+
+<body id="creaCorsoBody">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#486885">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-3" href="#"><span class="fw-bold text-warning">Corsuper</span> - Il sito dei
+                    super corsi!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><span class="text-warning"
+                                    id="logged"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="corsi.html">I tuoi corsi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="creaCorso.html">Crea un corso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning text-white" href="login.html"
+                                id="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row p-5">
+                <div class="col">
+                    <h1 class="text-center fw-bold display-4">Crea il tuo corso</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <label for="nomeCorso" class="fs-5 bg-white rounded p-1">Inserisci il nome del corso </label>
+                    <input type="text" class="fs-5" id="nomeCorso">
+                </div>
+                <div class="col-md-5">
+                    <label for="durataCorso" class="fs-5">Inserisci la durata del corso </label>
+                    <input type="text" class="fs-5" id="durataCorso">
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <h3 class="text-center mt-4 mb-4">Seleziona le materie del corso</h3>
+                <div class="col-md-3">
+                    <select id="materia1" class="fs-5 bg-white rounded p-1">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="materia2" class="fs-5 bg-white rounded p-1">
+                        
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="materia3" class="fs-5 bg-white rounded p-1">
+                    
+                    </select>
+                </div>
+                <span id="error" class="mt-2 text-center text-danger fs-5 fw-bold"></span>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <button type="button" id="crea" class="btn btn-dark fs-5">Crea corso</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="corsoCreato" class="text-center fs-4 mt-5 fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+            <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+                href="#"></a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a class="nav-link text-muted px-2" href="login.html">Logout</a></li>
+                <li class="nav-item"><a class="nav-link text-muted px-2" href="corsi.html">I tuoi corsi</a></li>
+                <li class="nav-item"><a class="nav-link text-muted px-2" href="creaCorso.html">Crea un corso</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/creaCorso.js"></script>
+</body>
+
+</html>

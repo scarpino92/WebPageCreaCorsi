@@ -1,0 +1,21 @@
+#corsiBody{
+    background: url("../img/matite-colorate-pastelli-185722.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#corsiTitle{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.cardCorso{
+    background-color: #f4f7fa;
+    padding: 30px;
+}
+
+
+footer{
+    background-color: #dfeefc;
+    padding: 5%;
+}
