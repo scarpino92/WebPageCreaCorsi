@@ -22,12 +22,21 @@ $(() => {
     }
 
     $('#crea').on('click', function () {
+        let string = '';
         let corso = $('#nomeCorso').val();
-        let durata = $('#durataCorso').val();
-        let mat1 = $('#materia1').val();
-        let mat2 = $('#materia2').val();
-        let mat3 = $('#materia3').val();
         let user = localStorage.getItem('user');
+        let durata = $('#durataCorso').val();
+        string += `Corso creato da ${user}: Il nome del corso è ${corso} e dura ${durata}, `;
+        let mat1 = $('#materia1').val();
+        string += `le materie scelte sono ${materia1[mat1]}`
+        let mat2 = $('#materia2').val();
+        if (mat2 > 0) {
+            string += `, ${materia2[mat2]}`
+        }
+        let mat3 = $('#materia3').val();
+        if (mat3 > 0) {
+            string += `, ${materia3[mat3]}`
+        }
 
         if (corso === '') {
             $('#error').text('Il nome del corso è obbligatorio!');
@@ -36,7 +45,7 @@ $(() => {
         } else if (mat1 === '') {
             $('#error').text('Devi inserire almeno una materia!');
         } else {
-            $('#corsoCreato').append(`Corso creato da ${user}: Il nome del corso è ${corso} e dura ${durata}, le materie scelte sono ${materia1[mat1]}, ${materia2[mat2]}, ${materia3[mat3]}.<br>`);
+            $('#corsoCreato').append(string);
             $('#error').text('');
             $('#nomeCorso').val('');
             $('#durataCorso').val('');
