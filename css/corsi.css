@@ -1,3 +1,7 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
 #corsiBody{
     background: url("../img/matite-colorate-pastelli-185722.jpg");
     background-size: cover;

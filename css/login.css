@@ -1,3 +1,7 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
 #loginBody{
     background: url("../img/48-482233_blue-smoke-wallpapers-desktop-12613-hd-pictures-high.jpg");
     background-size: cover;
@@ -10,7 +14,6 @@
     margin-top: 13vh;
     margin-bottom: 13vh;
     padding: 1%;
-    border: 2px solid black;
     border-radius: 70px;
     background-color: #dfeefc;
 }

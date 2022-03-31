@@ -1,3 +1,7 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
 #creaCorsoBody{
     background: url("../img/63-637398_animated-powerpoint-templates-ppt-jpeg-chainimage-powerpoint-backgrounds.jpg");
     background-size: cover;
